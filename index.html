@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            padding: 1;
+            margin: 0;
+            box-sizing: border-box;
+
+
+        }
+
+        body {
+            color: white;
+            border: 20px solid rgb(14, 71, 124);
+        }
+
+        .main-content {
+            /* border: 2px solid black; */
+            min-height: 1000px;
+            width: 90%;
+            display: grid;
+            margin: 20px auto;
+            grid-template-columns: 300px 700px;
+        }
+
+        .left-section {
+            /* border: 2px solid tomato; */
+            grid-column: span 1;
+            background-color: rgb(14, 71, 124);
+            padding: 1rem;
+        }
+
+        .right-section {
+            /* background-color: rgb(15, 58, 99); */
+            color: black;
+            /* border: 2px solid tomato; */
+            grid-column: span 1 / span 2;
+        }
+
+        .left-content {
+            padding: 1rem;
+        }
+
+        .profile-image {
+            display: block;
+            width: 60%;
+            height: 200px;
+            margin: auto;
+            border: 5px solid white;
+            border-radius: 30%;
+        }
+
+        .name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.02px;
+        }
+
+        .designation {
+            font-size: 1rem;
+            text-align: center;
+            padding-bottom: 0.5rem;
+            color: wheat;
+            text-transform: uppercase;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 0.75rem;
+            padding: 1rem;
+
+        }
+
+        .social-media-icon ul {
+            display: flex;
+
+        }
+
+        .social-media-icon ul li {
+            margin: auto;
+            list-style: none;
+        }
+
+        .social-media-icon ul li a img {
+            border-radius: 7px;
+            height: 20px;
+        }
+
+        .social-media-icon ol {
+            margin: 1.5rem;
+
+
+        }
+
+        .social-media-icon ol li {
+            font-size: 0.75rem;
+
+
+        }
+
+        .social-media-icon ol li img {
+            height: 17px;
+
+
+        }
+
+        .social-media-icon li {
+            list-style: none;
+            line-height: 40px;
+            margin-right: 20px;
+
+        }
+
+        .skills {
+            font-size: 0.75rem;
+            text-decoration: underline;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 0.5rem;
+            padding-top: 1rem;
+        }
+
+        .skill-name {
+
+            padding-bottom: 0.5rem;
+            padding-top: 1rem;
+            font-size: 0.65rem;
+            font-weight: 0.65rem;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .progress-bar {
+            border: 1px white solid;
+            border-width: 1px;
+            height: 4px;
+            background-color: white;
+
+        }
+
+        .right-main-content {
+            padding: 2rem 3rem;
+
+        }
+
+        .right-title {
+
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .right-title h2 {
+            color: rgb(138, 88, 23);
+            text-decoration: underline;
+        }
+
+        .right-title-para {
+            padding-top: 10px;
+            font-size: 0.6rem;
+            line-height: 1rem;
+        }
+
+        @media screen and (max-width:673px) {
+            .main-content {
+                grid-template-columns: repeat(1, 1fr);
+                
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-content">
+        <section class="left-section">
+            <div class="left-content">
+                <div class="profile-details">
+                    <div class="profile">
+                        <img src="/image/33588.jpg" alt="" class="profile-image">
+                    </div>
+                    <h1 class="name">
+                        Pallav.Soni
+                    </h1>
+                    <h2 class="designation">
+                        Programmer
+                    </h2>
+                    <hr>
+                    <p class="description">
+                        Full Stack Web Developer | Programmer | App developer
+                    </p>
+
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="social-media-icon">
+                    <ul>
+
+                        <li class="icon"><a href="https://www.newtonschool.co/" target="blank"><img
+                                    src="/image/logo fb.png" alt="" style="border-radius: 20px;"></a> </li>
+                        <li class="icon"><a href="https://www.newtonschool.co/" target="blank"><img
+                                    src="/image/logo insta.jpg" alt=""></a> </li>
+                        <li class="icon"><a href="https://www.newtonschool.co/" target="blank"><img
+                                    src="/image/logo linkedin.png" alt=""></a> </li>
+                        <li class="icon"><a href="https://www.newtonschool.co/" target="blank"><img
+                                    src="/image/logotwit.jpg" alt=""></a> </li>
+
+                    </ul>
+                    <ol>
+
+
+                        <li><img src="/image/logo mail.jpg" style="border-radius: 5px;" alt="">&nbsp
+                            &nbsppallavsoni64@gmail.com</li>
+                        <li><img src="/image/logo contact.png" alt="" style="border-radius: 30px;">&nbsp &nbsp9982141988
+                        </li>
+                        <li><img src="/image/logo location.png" style="border-radius: 5px;" alt="">&nbsp
+                            &nbspJaipur,Rajasthan</li>
+
+                    </ol>
+
+                </div>
+                <div class="skills">
+                    Skills
+                </div>
+                <div class="skill-iname">
+                    <div class="skill-name">
+                        HTML
+                    </div>
+                    <div class="progress-bar" style="width: 80%;">
+
+                    </div>
+                    <div class="skill-name">
+                        Java Script
+                    </div>
+                    <div class="progress-bar" style="width: 70%;">
+
+                    </div>
+                    <div class="skill-name">
+                        CSS
+                    </div>
+                    <div class="progress-bar" style="width: 60%;">
+
+                    </div>
+                    <div class="skill-name">
+                        React
+                    </div>
+                    <div class="progress-bar" style="width: 50%;">
+
+                    </div>
+                    <div class="skill-name">
+                        PHP
+                    </div>
+                    <div class="progress-bar" style="width: 40%;">
+
+                    </div>
+                    <div class="skill-name">
+                        NodeJs
+                    </div>
+                    <div class="progress-bar" style="width: 30%;">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="right-section">
+            <div class="right-main-content">
+                <div class="right-title" style="padding-top: 30px;">
+                    <h2>About me</h2>
+
+                    <div class="right-title-para">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat provident
+                            possimus soluta ratione, aperiam ipsam error rerum saepe harum nisi dolorum omnis officiis
+                            iusto facilis dolore, deserunt dicta eveniet inventore ea! Corrupti distinctio, illo
+                            repellendus minus itaque rem quia, minima ipsum ducimus consequatur sapiente voluptates ea
+                            fugiat enim harum.</p>
+                    </div>
+                </div>
+                <div class="right-title">
+                    <h2>Education</h2>
+                    <div class="education-1" style="padding-top: 20PX;">
+                        BACHELORS OF TECHNOLOGY
+                    </div>
+                    <div class="right-title-para" style="padding-top: 20PX;">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat provident
+                            possimus soluta ratione, aperiam ipsam error </p>
+                    </div>
+                    <div class="education-1" style="padding-top: 20PX;">
+                        hIGH SCHOOL
+                    </div>
+                    <div class="right-title-para" style="padding-top: 20PX;">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat provident
+                            possimus soluta ratione, aperiam ipsam error </p>
+                    </div>
+                </div>
+                <div class="right-title">
+                    <h2>Experiance</h2>
+                    <div class="education-1" style="padding-top: 20PX;">
+                        BACHELORS OF TECHNOLOGY
+                    </div>
+                    <div class="right-title-para" style="padding-top: 20PX;">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat provident
+                            possimus soluta ratione, aperiam ipsam error </p>
+                    </div>
+                    <div class="education-1" style="padding-top: 20PX;">
+                        hIGH SCHOOL
+                    </div>
+                    <div class="right-title-para" style="padding-top: 20PX;">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat provident
+                            possimus soluta ratione, aperiam ipsam error </p>
+                    </div>
+                </div>
+                <div class="right-title">
+                    <h2>Hobbies</h2>
+                    <ul style="padding-top: 20px; font-weight: 1000; font-size: 1rem;">
+                        <li>Reading Novels</li>
+                        <li>Travelling</li>
+                        <li>Passion for Music</li>
+                        <li>Play with codes</li>
+                        <li>Drink Scotch Whisky</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
